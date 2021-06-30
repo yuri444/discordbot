@@ -11,4 +11,4 @@ client.on('message', (msg) => {
   if (msg.content === 'ping') msg.channel.send('pong');
 });
 
-client.login(config.token);
+client.login(process.env.TOKEN);
