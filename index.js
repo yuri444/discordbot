@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-// const config = require('./config.json');
+const config = require('./config.json');
 
 const prefix = '!';
 const fs = require('fs');
@@ -24,9 +24,10 @@ client.on('message', (msg) => {
   const args = msg.content.slice(prefix.length).split(' ');
   const command = args.shift().toLowerCase();
 
-  if (command === 'ping') client.commands.get('ping').execute(msg, args);
+  if (command === 'test') client.commands.get('test').execute(msg, args);
   else if (command === 'gif') client.commands.get('gif').execute(msg, args);
+  else if (command === 'image') client.commands.get('image').execute(msg, args);
 });
 
-client.login(process.env.TOKEN);
-// client.login(config.token);
+// client.login(process.env.TOKEN);
+client.login(config.token);

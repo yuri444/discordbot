@@ -5,7 +5,7 @@ module.exports = {
   description: 'this is a gif command',
   async execute(msg, args) {
     let tokens = msg.content.split(' ');
-    let keywords = 'excited'; // standaard keyword
+    let keywords = 'excited';
     if (tokens.length > 1) {
       keywords = tokens.slice(1, tokens.length).join(' ');
     }
