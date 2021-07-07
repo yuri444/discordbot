@@ -1,4 +1,4 @@
-const Scrapper = require('images-scraper');
+var Scrapper = require('images-scraper');
 
 const google = new Scrapper({
   puppeteer: {
