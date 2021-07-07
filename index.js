@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const config = require('./config.json');
+// const config = require('./config.json');
 
 const prefix = '!';
 const fs = require('fs');
@@ -30,7 +30,8 @@ client.on('message', (msg) => {
   else if (command === 'rpc') client.commands.get('rpc').execute(msg, args);
   else if (command === 'waarzegger')
     client.commands.get('waarzegger').execute(msg, args);
+  else if (command === 'meme') client.commands.get('meme').execute(msg, args);
 });
 
-// client.login(process.env.TOKEN);
-client.login(config.token);
+client.login(process.env.TOKEN);
+// client.login(config.token);

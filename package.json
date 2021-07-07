@@ -5,7 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "discord.js": "^12.5.3",
-    "images-scraper": "^6.3.0"
+    "images-scraper": "^6.3.0",
+    "random-puppy": "^1.1.0"
   },
   "devDependencies": {},
   "scripts": {
